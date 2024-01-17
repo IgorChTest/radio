@@ -40,23 +40,23 @@ public class Radio {
 
     public void setCurrentVolume(int newCurrentVolume) {
         if (newCurrentVolume < 0) {
-            newCurrentVolume = 0;
+            return;
         }
         if (newCurrentVolume > 100) {
-            newCurrentVolume = 100;
+            return;
         }
         currentVolume = newCurrentVolume;
     }
 
     public void increaseVolume() {
         if (currentVolume < 100) {
-            currentVolume ++;
+            currentVolume = currentVolume + 1;
         }
     }
 
     public void turnDownVolume() {
         if (currentVolume > 0) {
-            currentVolume --;
+            currentVolume = currentVolume - 1;
         }
     }
 }

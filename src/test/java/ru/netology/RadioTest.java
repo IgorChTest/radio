@@ -81,7 +81,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldReductionVolume() {
+    public void shouldTurnDownVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume(2);
         radio.turnDownVolume();
@@ -93,7 +93,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetToMaxVol() {
+    public void shouldSetToMaxVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume(100);
         radio.increaseVolume();
@@ -104,7 +104,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetToMinVol() {
+    public void shouldSetToMinVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume(0);
         radio.turnDownVolume();
